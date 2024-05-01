@@ -17,8 +17,8 @@ protected:
 #if PROTOCOL_VERSION < 759 /* < 1.19 */
 //    virtual void Handle(ProtocolCraft::ClientboundChatPacket& msg) override;
 #else
-    virtual void Handle(ProtocolCraft::ClientboundPlayerChatPacket& msg) override;
-    virtual void Handle(ProtocolCraft::ClientboundSystemChatPacket& msg) override;
+//    virtual void Handle(ProtocolCraft::ClientboundPlayerChatPacket& msg) override;
+//    virtual void Handle(ProtocolCraft::ClientboundSystemChatPacket& msg) override;
 #endif
 
 //    void ProcessChatMsg(const std::vector<std::string>& splitted_msg);
