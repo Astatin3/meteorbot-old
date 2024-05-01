@@ -1,0 +1,470 @@
+[
+    {
+        "id": 0,
+        "name": "ocean",
+        "rainfall": 0.5,
+        "temperature": 0.5
+    },
+    {
+        "id": 1,
+        "name": "plains",
+        "rainfall": 0.4,
+        "temperature": 0.8
+    },
+    {
+        "id": 2,
+        "name": "desert",
+        "rainfall": 0.0,
+        "temperature": 2.0
+    },
+    {
+        "id": 3,
+        "name": "mountains",
+        "rainfall": 0.3,
+        "temperature": 0.2
+    },
+    {
+        "id": 4,
+        "name": "forest",
+        "rainfall": 0.8,
+        "temperature": 0.7
+    },
+    {
+        "id": 5,
+        "name": "taiga",
+        "rainfall": 0.8,
+        "temperature": 0.25
+    },
+    {
+        "id": 6,
+        "name": "swamp",
+        "rainfall": 0.9,
+        "temperature": 0.8,
+        "biomeType": "Swamp"
+    },
+    {
+        "id": 7,
+        "name": "river",
+        "rainfall": 0.5,
+        "temperature": 0.5
+    },
+    {
+        "id": 8,
+        "name": "nether",
+        "rainfall": 0.0,
+        "temperature": 2.0
+    },
+    {
+        "id": 9,
+        "name": "the_end",
+        "rainfall": 0.5,
+        "temperature": 0.5
+    },
+    {
+        "id": 10,
+        "name": "frozen_ocean",
+        "rainfall": 0.5,
+        "temperature": 0.0,
+        "biomeType": "FrozenOcean"
+    },
+    {
+        "id": 11,
+        "name": "frozen_river",
+        "rainfall": 0.5,
+        "temperature": 0.0,
+        "biomeType": "FrozenOcean"
+    },
+    {
+        "id": 12,
+        "name": "snowy_tundra",
+        "rainfall": 0.5,
+        "temperature": 0.0
+    },
+    {
+        "id": 13,
+        "name": "snowy_mountains",
+        "rainfall": 0.5,
+        "temperature": 0.0
+    },
+    {
+        "id": 14,
+        "name": "mushroom_fields",
+        "rainfall": 1.0,
+        "temperature": 0.9
+    },
+    {
+        "id": 15,
+        "name": "mushroom_field_shore",
+        "rainfall": 1.0,
+        "temperature": 0.9
+    },
+    {
+        "id": 16,
+        "name": "beach",
+        "rainfall": 0.4,
+        "temperature": 0.8
+    },
+    {
+        "id": 17,
+        "name": "desert_hills",
+        "rainfall": 0.0,
+        "temperature": 2.0
+    },
+    {
+        "id": 18,
+        "name": "wooded_hills",
+        "rainfall": 0.8,
+        "temperature": 0.7
+    },
+    {
+        "id": 19,
+        "name": "taiga_hills",
+        "rainfall": 0.8,
+        "temperature": 0.25
+    },
+    {
+        "id": 20,
+        "name": "mountain_edge",
+        "rainfall": 0.3,
+        "temperature": 0.2
+    },
+    {
+        "id": 21,
+        "name": "jungle",
+        "rainfall": 0.9,
+        "temperature": 0.95
+    },
+    {
+        "id": 22,
+        "name": "jungle_hills",
+        "rainfall": 0.9,
+        "temperature": 0.95
+    },
+    {
+        "id": 23,
+        "name": "jungle_edge",
+        "rainfall": 0.8,
+        "temperature": 0.95
+    },
+    {
+        "id": 24,
+        "name": "deep_ocean",
+        "rainfall": 0.5,
+        "temperature": 0.5
+    },
+    {
+        "id": 25,
+        "name": "stone_shore",
+        "rainfall": 0.3,
+        "temperature": 0.2
+    },
+    {
+        "id": 26,
+        "name": "snowy_beach",
+        "rainfall": 0.3,
+        "temperature": 0.05
+    },
+    {
+        "id": 27,
+        "name": "birch_forest",
+        "rainfall": 0.6,
+        "temperature": 0.6
+    },
+    {
+        "id": 28,
+        "name": "birch_forest_hills",
+        "rainfall": 0.6,
+        "temperature": 0.6
+    },
+    {
+        "id": 29,
+        "name": "dark_forest",
+        "rainfall": 0.8,
+        "temperature": 0.7
+    },
+    {
+        "id": 30,
+        "name": "snowy_taiga",
+        "rainfall": 0.4,
+        "temperature": -0.5
+    },
+    {
+        "id": 31,
+        "name": "snowy_taiga_hills",
+        "rainfall": 0.4,
+        "temperature": -0.5
+    },
+    {
+        "id": 32,
+        "name": "giant_tree_taiga",
+        "rainfall": 0.8,
+        "temperature": 0.3
+    },
+    {
+        "id": 33,
+        "name": "giant_tree_taiga_hills",
+        "rainfall": 0.8,
+        "temperature": 0.3
+    },
+    {
+        "id": 34,
+        "name": "wooded_mountains",
+        "rainfall": 0.3,
+        "temperature": 0.2
+    },
+    {
+        "id": 35,
+        "name": "savanna",
+        "rainfall": 0.0,
+        "temperature": 1.2
+    },
+    {
+        "id": 36,
+        "name": "savanna_plateau",
+        "rainfall": 0.0,
+        "temperature": 1.0
+    },
+    {
+        "id": 37,
+        "name": "badlands",
+        "rainfall": 0.0,
+        "temperature": 2.0,
+        "biomeType": "Badlands"
+    },
+    {
+        "id": 38,
+        "name": "wooded_badlands_plateau",
+        "rainfall": 0.0,
+        "temperature": 2.0,
+        "biomeType": "Badlands"
+    },
+    {
+        "id": 39,
+        "name": "badlands_plateau",
+        "rainfall": 0.0,
+        "temperature": 2.0,
+        "biomeType": "Badlands"
+    },
+    {
+        "id": 40,
+        "name": "small_end_islands",
+        "rainfall": 0.4,
+        "temperature": 0.5
+    },
+    {
+        "id": 41,
+        "name": "end_midlands",
+        "rainfall": 0.4,
+        "temperature": 0.5
+    },
+    {
+        "id": 42,
+        "name": "end_highlands",
+        "rainfall": 0.4,
+        "temperature": 0.5
+    },
+    {
+        "id": 43,
+        "name": "end_barrens",
+        "rainfall": 0.4,
+        "temperature": 0.5
+    },
+    {
+        "id": 44,
+        "name": "warm_ocean",
+        "rainfall": 0.4,
+        "temperature": 0.8,
+        "biomeType": "WarmOcean"
+    },
+    {
+        "id": 45,
+        "name": "lukewarm_ocean",
+        "rainfall": 0.4,
+        "temperature": 0.8,
+        "biomeType": "LukewarmOcean"
+    },
+    {
+        "id": 46,
+        "name": "cold_ocean",
+        "rainfall": 0.4,
+        "temperature": 0.8,
+        "biomeType": "ColdOcean"
+    },
+    {
+        "id": 47,
+        "name": "deep_warm_ocean",
+        "rainfall": 0.4,
+        "temperature": 0.8,
+        "biomeType": "WarmOcean"
+    },
+    {
+        "id": 48,
+        "name": "deep_lukewarm_ocean",
+        "rainfall": 0.4,
+        "temperature": 0.8,
+        "biomeType": "LukewarmOcean"
+    },
+    {
+        "id": 49,
+        "name": "deep_cold_ocean",
+        "rainfall": 0.4,
+        "temperature": 0.8,
+        "biomeType": "ColdOcean"
+    },
+    {
+        "id": 50,
+        "name": "deep_frozen_ocean",
+        "rainfall": 0.4,
+        "temperature": 0.8,
+        "biomeType": "FrozenOcean"
+    },
+    {
+        "id": 127,
+        "name": "the_void",
+        "rainfall": 0.5,
+        "temperature": 0.5
+    },
+    {
+        "id": 129,
+        "name": "sunflower_plains",
+        "rainfall": 0.4,
+        "temperature": 0.8
+    },
+    {
+        "id": 130,
+        "name": "desert_lakes",
+        "rainfall": 0.0,
+        "temperature": 2.0
+    },
+    {
+        "id": 131,
+        "name": "gravelly_mountains",
+        "rainfall": 0.3,
+        "temperature": 0.2
+    },
+    {
+        "id": 132,
+        "name": "flower_forest",
+        "rainfall": 0.8,
+        "temperature": 0.7
+    },
+    {
+        "id": 133,
+        "name": "taiga_mountains",
+        "rainfall": 0.8,
+        "temperature": 0.25
+    },
+    {
+        "id": 134,
+        "name": "swamp_hills",
+        "rainfall": 0.9,
+        "temperature": 0.8,
+        "biomeType": "Swamp"
+    },
+    {
+        "id": 140,
+        "name": "ice_spikes",
+        "rainfall": 0.5,
+        "temperature": 0.0
+    },
+    {
+        "id": 149,
+        "name": "modified_jungle",
+        "rainfall": 0.9,
+        "temperature": 0.95
+    },
+    {
+        "id": 151,
+        "name": "modified_jungle_edge",
+        "rainfall": 0.8,
+        "temperature": 0.95
+    },
+    {
+        "id": 155,
+        "name": "tall_birch_forest",
+        "rainfall": 0.6,
+        "temperature": 0.6
+    },
+    {
+        "id": 156,
+        "name": "tall_birch_hills",
+        "rainfall": 0.6,
+        "temperature": 0.6,
+        "biomeType": "DarkForest"
+    },
+    {
+        "id": 157,
+        "name": "dark_forest_hills",
+        "rainfall": 0.8,
+        "temperature": 0.7
+    },
+    {
+        "id": 158,
+        "name": "snowy_taiga_mountains",
+        "rainfall": 0.4,
+        "temperature": -0.5
+    },
+    {
+        "id": 160,
+        "name": "giant_spruce_taiga",
+        "rainfall": 0.8,
+        "temperature": 0.25
+    },
+    {
+        "id": 161,
+        "name": "giant_spruce_taiga_hills",
+        "rainfall": 0.8,
+        "temperature": 0.25
+    },
+    {
+        "id": 162,
+        "name": "gravelly_mountains+",
+        "rainfall": 0.3,
+        "temperature": 0.2
+    },
+    {
+        "id": 163,
+        "name": "shattered_savanna",
+        "rainfall": 0.0,
+        "temperature": 1.1
+    },
+    {
+        "id": 164,
+        "name": "shattered_savanna_plateau",
+        "rainfall": 0.0,
+        "temperature": 1.0
+    },
+    {
+        "id": 165,
+        "name": "eroded_badlands",
+        "rainfall": 0.0,
+        "temperature": 2.0,
+        "biomeType": "Badlands"
+    },
+    {
+        "id": 166,
+        "name": "modified_wooded_badlands_plateau",
+        "rainfall": 0.0,
+        "temperature": 2.0,
+        "biomeType": "Badlands"
+    },
+    {
+        "id": 167,
+        "name": "modified_badlands_plateau",
+        "rainfall": 0.0,
+        "temperature": 2.0,
+        "biomeType": "Badlands"
+    },
+    {
+        "id": 168,
+        "name": "bamboo_jungle",
+        "rainfall": 0.9,
+        "temperature": 0.95
+    },
+    {
+        "id": 169,
+        "name": "bamboo_jungle_hills",
+        "rainfall": 0.9,
+        "temperature": 0.95
+    }
+]

@@ -1,0 +1,50 @@
+# Doxyfile 1.9.6
+
+# Basic settings:
+PROJECT_NAME           = Botcraft
+PROJECT_NUMBER         = ${BOTCRAFT_GAME_VERSION}
+STRIP_FROM_PATH        = ${CMAKE_CURRENT_SOURCE_DIR}
+INPUT                  = ${CMAKE_CURRENT_SOURCE_DIR}/botcraft ${CMAKE_CURRENT_SOURCE_DIR}/protocolCraft ${DOXYGEN_MAIN_PAGE} ${DOXYGEN_WIKI_FOLDER}
+RECURSIVE              = YES
+PREDEFINED             = ${DOXYGEN_PREDEFINED}
+USE_MDFILE_AS_MAINPAGE = ${DOXYGEN_MAIN_PAGE}
+PROJECT_LOGO           = ${CMAKE_CURRENT_SOURCE_DIR}/doxygen/logo_favicon.png
+LAYOUT_FILE            = ${CMAKE_CURRENT_SOURCE_DIR}/doxygen/DoxygenLayout.xml
+
+# output
+OUTPUT_DIRECTORY       = ${BOTCRAFT_OUTPUT_DIR}/doc
+HTML_OUTPUT            = ${BOTCRAFT_GAME_VERSION}
+OUTPUT_LANGUAGE        = English
+
+# html
+HTML_COLORSTYLE        = LIGHT
+HTML_HEADER            = ${CMAKE_CURRENT_SOURCE_DIR}/doxygen/header.html
+HTML_EXTRA_STYLESHEET  = ${CMAKE_CURRENT_SOURCE_DIR}/doxygen/doxygen-awesome.css ${CMAKE_CURRENT_SOURCE_DIR}/doxygen/doxygen-awesome-sidebar-only.css ${CMAKE_CURRENT_SOURCE_DIR}/doxygen/doxygen-awesome-sidebar-only-darkmode-toggle.css
+HTML_EXTRA_FILES       = ${CMAKE_CURRENT_SOURCE_DIR}/doxygen/doxygen-awesome-darkmode-toggle.js ${CMAKE_CURRENT_SOURCE_DIR}/doxygen/doxygen-awesome-fragment-copy-button.js ${CMAKE_CURRENT_SOURCE_DIR}/doxygen/doxygen-awesome-paragraph-link.js
+
+# reference
+REFERENCED_BY_RELATION = YES
+REFERENCES_RELATION    = YES
+
+# extract all please
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = YES
+EXTRACT_PRIV_VIRTUAL   = YES
+EXTRACT_STATIC         = YES
+EXTRACT_LOCAL_METHODS  = YES
+
+# disable latex
+GENERATE_LATEX         = NO
+USE_PDFLATEX           = NO
+
+# brief description from first sentence
+JAVADOC_AUTOBRIEF      = YES
+
+# stl
+BUILTIN_STL_SUPPORT    = YES
+
+# misc
+SOURCE_BROWSER         = YES
+STRIP_CODE_COMMENTS    = NO
+GENERATE_TREEVIEW      = YES
+QUIET                  = NO

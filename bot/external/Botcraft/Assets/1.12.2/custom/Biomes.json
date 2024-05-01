@@ -1,0 +1,383 @@
+[
+    {
+        "id": 0,
+        "name": "ocean",
+        "rainfall": 0.5,
+        "temperature": 0.5
+    },
+    {
+        "id": 1,
+        "name": "plains",
+        "rainfall": 0.4,
+        "temperature": 0.8
+    },
+    {
+        "id": 2,
+        "name": "desert",
+        "rainfall": 0.0,
+        "temperature": 2.0
+    },
+    {
+        "id": 3,
+        "name": "extreme_hills",
+        "rainfall": 0.3,
+        "temperature": 0.2
+    },
+    {
+        "id": 4,
+        "name": "forest",
+        "rainfall": 0.8,
+        "temperature": 0.7
+    },
+    {
+        "id": 5,
+        "name": "taiga",
+        "rainfall": 0.8,
+        "temperature": 0.25
+    },
+    {
+        "id": 6,
+        "name": "swampland",
+        "rainfall": 0.9,
+        "temperature": 0.8,
+        "biomeType": "Swamp"
+    },
+    {
+        "id": 7,
+        "name": "river",
+        "rainfall": 0.5,
+        "temperature": 0.5
+    },
+    {
+        "id": 8,
+        "name": "hell",
+        "rainfall": 0.0,
+        "temperature": 2.0
+    },
+    {
+        "id": 9,
+        "name": "the_end",
+        "rainfall": 0.5,
+        "temperature": 0.5
+    },
+    {
+        "id": 10,
+        "name": "frozen_ocean",
+        "rainfall": 0.5,
+        "temperature": 0.0
+    },
+    {
+        "id": 11,
+        "name": "frozen_river",
+        "rainfall": 0.5,
+        "temperature": 0.0
+    },
+    {
+        "id": 12,
+        "name": "ice_plains",
+        "rainfall": 0.5,
+        "temperature": 0.0
+    },
+    {
+        "id": 13,
+        "name": "ice_mountains",
+        "rainfall": 0.5,
+        "temperature": 0.0
+    },
+    {
+        "id": 14,
+        "name": "mushroom_island",
+        "rainfall": 1.0,
+        "temperature": 0.9
+    },
+    {
+        "id": 15,
+        "name": "mushroom_island_shore",
+        "rainfall": 1.0,
+        "temperature": 0.9
+    },
+    {
+        "id": 16,
+        "name": "beach",
+        "rainfall": 0.4,
+        "temperature": 0.8
+    },
+    {
+        "id": 17,
+        "name": "desert_hills",
+        "rainfall": 0.0,
+        "temperature": 2.0
+    },
+    {
+        "id": 18,
+        "name": "forest_hills",
+        "rainfall": 0.8,
+        "temperature": 0.7
+    },
+    {
+        "id": 19,
+        "name": "taiga_hills",
+        "rainfall": 0.8,
+        "temperature": 0.25
+    },
+    {
+        "id": 20,
+        "name": "extreme_hills_edge",
+        "rainfall": 0.3,
+        "temperature": 0.2
+    },
+    {
+        "id": 21,
+        "name": "jungle",
+        "rainfall": 0.9,
+        "temperature": 0.95
+    },
+    {
+        "id": 22,
+        "name": "jungle_hills",
+        "rainfall": 0.9,
+        "temperature": 0.95
+    },
+    {
+        "id": 23,
+        "name": "jungle_edge",
+        "rainfall": 0.8,
+        "temperature": 0.95
+    },
+    {
+        "id": 24,
+        "name": "deep_ocean",
+        "rainfall": 0.5,
+        "temperature": 0.5
+    },
+    {
+        "id": 25,
+        "name": "stone_beach",
+        "rainfall": 0.3,
+        "temperature": 0.2
+    },
+    {
+        "id": 26,
+        "name": "cold_beach",
+        "rainfall": 0.3,
+        "temperature": 0.05
+    },
+    {
+        "id": 27,
+        "name": "birch_forest",
+        "rainfall": 0.6,
+        "temperature": 0.6
+    },
+    {
+        "id": 28,
+        "name": "birch_forest_hills",
+        "rainfall": 0.6,
+        "temperature": 0.6
+    },
+    {
+        "id": 29,
+        "name": "roofed_forest",
+        "rainfall": 0.8,
+        "temperature": 0.7
+    },
+    {
+        "id": 30,
+        "name": "cold_taiga",
+        "rainfall": 0.4,
+        "temperature": -0.5
+    },
+    {
+        "id": 31,
+        "name": "cold_taiga_hills",
+        "rainfall": 0.4,
+        "temperature": -0.5
+    },
+    {
+        "id": 32,
+        "name": "mega_taiga",
+        "rainfall": 0.8,
+        "temperature": 0.3
+    },
+    {
+        "id": 33,
+        "name": "mega_taiga_hills",
+        "rainfall": 0.8,
+        "temperature": 0.3
+    },
+    {
+        "id": 34,
+        "name": "extreme_hills+",
+        "rainfall": 0.3,
+        "temperature": 0.2
+    },
+    {
+        "id": 35,
+        "name": "savanna",
+        "rainfall": 0.0,
+        "temperature": 1.2
+    },
+    {
+        "id": 36,
+        "name": "savanna_plateau",
+        "rainfall": 0.0,
+        "temperature": 1.0
+    },
+    {
+        "id": 37,
+        "name": "mesa",
+        "rainfall": 0.0,
+        "temperature": 2.0,
+        "biomeType": "Badlands"
+    },
+    {
+        "id": 38,
+        "name": "mesa_plateau_f",
+        "rainfall": 0.0,
+        "temperature": 2.0,
+        "biomeType": "Badlands"
+    },
+    {
+        "id": 39,
+        "name": "mesa_plateau",
+        "rainfall": 0.0,
+        "temperature": 2.0,
+        "biomeType": "Badlands"
+    },
+    {
+        "id": 127,
+        "name": "the_void",
+        "rainfall": 0.5,
+        "temperature": 0.5
+    },
+    {
+        "id": 129,
+        "name": "sunflower_plains",
+        "rainfall": 0.4,
+        "temperature": 0.8
+    },
+    {
+        "id": 130,
+        "name": "desert_m",
+        "rainfall": 0.0,
+        "temperature": 2.0
+    },
+    {
+        "id": 131,
+        "name": "extreme_hills_m",
+        "rainfall": 0.3,
+        "temperature": 0.2
+    },
+    {
+        "id": 132,
+        "name": "flower_forest",
+        "rainfall": 0.8,
+        "temperature": 0.7
+    },
+    {
+        "id": 133,
+        "name": "taiga_m",
+        "rainfall": 0.8,
+        "temperature": 0.25
+    },
+    {
+        "id": 134,
+        "name": "swampland_m",
+        "rainfall": 0.9,
+        "temperature": 0.8,
+        "biomeType": "Swamp"
+    },
+    {
+        "id": 140,
+        "name": "ice_plains_spikes",
+        "rainfall": 0.5,
+        "temperature": 0.0
+    },
+    {
+        "id": 149,
+        "name": "jungle_m",
+        "rainfall": 0.9,
+        "temperature": 0.95
+    },
+    {
+        "id": 151,
+        "name": "jungle_edge_m",
+        "rainfall": 0.8,
+        "temperature": 0.95
+    },
+    {
+        "id": 155,
+        "name": "birch_forest_m",
+        "rainfall": 0.6,
+        "temperature": 0.6
+    },
+    {
+        "id": 156,
+        "name": "birch_forest_hills_m",
+        "rainfall": 0.6,
+        "temperature": 0.6,
+        "biomeType": "DarkForest"
+    },
+    {
+        "id": 157,
+        "name": "roofed_forest_m",
+        "rainfall": 0.8,
+        "temperature": 0.7
+    },
+    {
+        "id": 158,
+        "name": "cold_taiga_m",
+        "rainfall": 0.4,
+        "temperature": -0.5
+    },
+    {
+        "id": 160,
+        "name": "mega_spruce_taiga",
+        "rainfall": 0.8,
+        "temperature": 0.25
+    },
+    {
+        "id": 161,
+        "name": "redwood_taiga_hills_m",
+        "rainfall": 0.8,
+        "temperature": 0.25
+    },
+    {
+        "id": 162,
+        "name": "extreme_hills+_m",
+        "rainfall": 0.3,
+        "temperature": 0.2
+    },
+    {
+        "id": 163,
+        "name": "savanna_m",
+        "rainfall": 0.0,
+        "temperature": 1.1
+    },
+    {
+        "id": 164,
+        "name": "savanna_plateau_m",
+        "rainfall": 0.0,
+        "temperature": 1.0
+    },
+    {
+        "id": 165,
+        "name": "mesa_(bryce)",
+        "rainfall": 0.0,
+        "temperature": 2.0,
+        "biomeType": "Badlands"
+    },
+    {
+        "id": 166,
+        "name": "mesa_plateau_f_m",
+        "rainfall": 0.0,
+        "temperature": 2.0,
+        "biomeType": "Badlands"
+    },
+    {
+        "id": 167,
+        "name": "mesa_plateau_m",
+        "rainfall": 0.0,
+        "temperature": 2.0,
+        "biomeType": "Badlands"
+    }
+]
