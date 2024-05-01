@@ -50,6 +50,7 @@ int main(int argc, char* argv[])
 
 //        Botcraft::ConnectionClient client;
         CommandClient client(false);
+        client.SetAutoRespawn(true);
 //        CommandClient client(true);
 //
         LOG_INFO("Starting connection process");
