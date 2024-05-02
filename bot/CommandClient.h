@@ -13,20 +13,10 @@ public:
     CommandClient(const bool use_renderer_);
     ~CommandClient();
 
-protected:
-#if PROTOCOL_VERSION < 759 /* < 1.19 */
-//    virtual void Handle(ProtocolCraft::ClientboundChatPacket& msg) override;
-#else
-//    virtual void Handle(ProtocolCraft::ClientboundPlayerChatPacket& msg) override;
-//    virtual void Handle(ProtocolCraft::ClientboundSystemChatPacket& msg) override;
-#endif
+    void gotopos(int x, int y, int z);
+    void gotocmd(int x, int y, int z);
 
-//    void ProcessChatMsg(const std::vector<std::string>& splitted_msg);
+    void startGotoSteamMode();
 
-    // Check for any spawnable blocks in a sphere from pos and prints
-    // all the positions into a file
-    // Use check_lighting to add a check on light block value (> 7)
-    // (warning: ignore top slabs and upside-down stairs,
-    // you should check for such blocks manually)
-//    void CheckPerimeter(const Botcraft::Position& pos, const float radius, const bool check_lighting);
+    void stop();
 };

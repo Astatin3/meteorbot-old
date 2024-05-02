@@ -9,6 +9,7 @@ import meteordevelopment.meteorclient.systems.modules.Module;
 import net.minecraft.util.math.Vec3d;
 
 import java.io.*;
+import java.util.concurrent.TimeUnit;
 
 
 public class ModuleExample extends Module {
@@ -58,7 +59,7 @@ public class ModuleExample extends Module {
         cmdThread = new Thread(new Runnable() {
             public void run() {
                 readCMD();
-                stopBot();
+                quitBot();
             }
         });
         cmdThread.start();
@@ -75,8 +76,7 @@ public class ModuleExample extends Module {
 
             String line;
             while ((line = stdout.readLine()) != null) {
-                if(verboseMode.get())
-                    info(line);
+                parseSTDOUT(line);
             }
 
             int exitCode = process.waitFor();
@@ -89,20 +89,36 @@ public class ModuleExample extends Module {
         }
     }
 
+    private void parseSTDOUT(String str){
+        if(verboseMode.get())
+            info(str);
+
+        if(str.equals("Get Player Pos")){
+            assert mc.player != null;
+            Vec3d vel = mc.player.getVelocity();
+            writeSTDIN("PlayerPos:" +
+                mc.player.getX() + "," +
+                mc.player.getY() + "," +
+                mc.player.getZ() + "," +
+                vel.getX() + "," +
+                vel.getZ() + "," +
+                vel.getZ() + ",");
+        }
+    }
 
     private Thread cmdThread = null;
 
     public void onActivate() {
-        stopBot();
+        quitBot();
         startCMD();
     }
 
     @Override
     public void onDeactivate() {
-        stopBot();
+        quitBot();
     }
 
-    public void stopBot(){
+    public void quitBot(){
         if (cmdThread != null) {
             writeSTDIN("Disconnect");
             cmdThread.interrupt();
@@ -134,17 +150,22 @@ public class ModuleExample extends Module {
         }
     }
 
-    private void parseResponse(String response){
-        if(response.equals("Get Player Pos")){
-            Vec3d vel = mc.player.getVelocity();
-            writeSTDIN("PlayerPos:" +
-                mc.player.getX() + "," +
-                mc.player.getY() + "," +
-                mc.player.getZ() + "," +
-                vel.getX() + "," +
-                vel.getZ() + "," +
-                vel.getZ() + ",");
-        }
+    public boolean followMode = false;
+    public void startFollowMode(){
+        writeSTDIN("startGotoSteamMode");
+        followMode = true;
+        new Thread(new Runnable() {
+            public void run() {
+                while(followMode){
+                    writeSTDIN("goto:"+mc.player.getX()+","+mc.player.getY()+","+mc.player.getZ());
+                    try {
+                        TimeUnit.SECONDS.sleep(1);
+                    } catch (InterruptedException ie) {
+                        Thread.currentThread().interrupt();
+                    }
+                }
+            }
+        }).start();
     }
 }
 

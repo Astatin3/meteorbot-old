@@ -128,8 +128,8 @@ void ChatCommandClient::ProcessChatMsg(const std::vector<std::string>& splitted_
                     // possibilities to create a leaf. Note that
                     // only the lambda solution can use default
                     // parameters values
-                    .leaf("go to lambda", [=](ChatCommandClient& c) { return GoTo(c, target_position, 0, 0, 0, true, false, speed_multiplier); })
-                    .leaf("go to function", GoTo, target_position, 0, 0, 0, true, false, speed_multiplier)
+                    .leaf("go to lambda", [=](ChatCommandClient& c) { return GoTo(c, target_position, 0, 0, 0, true, true, speed_multiplier); })
+                    .leaf("go to function", GoTo, target_position, 0, 0, 0, true, true, speed_multiplier)
                     .leaf("go to std::bind", std::bind(GoTo, std::placeholders::_1, target_position, 0, 0, 0, true, false, speed_multiplier))
                     // If goto fails, say something in chat
                     .leaf(Say, "Pathfinding failed :(")

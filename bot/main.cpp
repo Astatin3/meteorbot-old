@@ -20,10 +20,52 @@ struct Args
 
 Args ParseCommandLine(int argc, char* argv[]);
 
-int main(int argc, char* argv[])
-{
-    try
-    {
+std::vector<std::string> split(std::string text, char delim) {
+    std::string line;
+    std::vector<std::string> vec;
+    std::stringstream ss(text);
+    while(std::getline(ss, line, delim)) {
+        vec.push_back(line);
+    }
+    return vec;
+}
+
+void runSTDINThing(CommandClient &client){
+    for (std::string line; std::getline(std::cin, line);) {
+        std::cout << "Got message: " + line << std::endl;
+
+
+        if (line.starts_with("chat:")) {
+            std::string msg = line.substr(5, line.length());
+            std::cout << "Sending chat message: " + msg << std::endl;
+            client.SendChatMessage(msg);
+        } else if (line.starts_with("cmd:")) {
+            std::string cmd = line.substr(4, line.length());
+            std::cout << "Sending commnad: /" + cmd << std::endl;
+            client.SendChatCommand(cmd);
+        } else if (line.starts_with("Stop")){
+            std::cout << "Stopped current action." << std::endl;
+            client.stop();
+        } else if (line.starts_with("Disconnect")) {
+            std::cout << "Disconnected." << std::endl;
+            client.Disconnect();
+        } else if (line.starts_with("goto:")) {
+            std::vector<std::string> xyz = split(line.substr(5, line.length()), ',');
+            std::cout << "Moving toward: (" + xyz.at(0) + ", "
+                         + xyz.at(1) + ", "
+                         + xyz.at(2) + ")" << std::endl;
+            client.gotocmd(std::stoi(xyz.at(0)),
+                           std::stoi(xyz.at(1)),
+                           std::stoi(xyz.at(2)));
+        } else if (line.starts_with("startGotoSteamMode")){
+            std::cout << "Started GOTO stream mode..." << std::endl;
+            client.startGotoSteamMode();
+        }
+    }
+}
+
+int main(int argc, char* argv[]){
+    try {
         // Init logging, log everything >= Info, only to console, no file
         Botcraft::Logger::GetInstance().SetLogLevel(Botcraft::LogLevel::Info);
         Botcraft::Logger::GetInstance().SetFilename("");
@@ -48,42 +90,17 @@ int main(int argc, char* argv[])
             }
         }
 
-//        Botcraft::ConnectionClient client;
         CommandClient client(false);
+
         client.SetAutoRespawn(true);
-//        CommandClient client(true);
-//
+
         LOG_INFO("Starting connection process");
-//
-//        client.SetAutoRespawn(true);
-//
-//        LOG_INFO("Starting connection process");
+
         client.Connect(args.address, args.login);
-//
-//        client.RunBehaviourUntilClosed();
 
-//        client.Disconnect();
+        std::thread thread(runSTDINThing, std::ref(client));
 
-//        return 0;
-
-//        client.Connect(args.address, args.login);
-
-        for (std::string line; std::getline(std::cin, line);) {
-            std::cout << "Got message: "+line << std::endl;
-
-
-            if(line.starts_with("chat:")){
-                client.SendChatMessage(line.substr(5,line.length()));
-            }else if(line.starts_with("cmd:")){
-                client.SendChatCommand(line.substr(4,line.length()));
-            }else if(line.starts_with("Disconnect")){
-                std::cout << "Disconnected." << std::endl;
-                client.Disconnect();
-                return 0;
-            }
-
-
-        }
+        client.RunBehaviourUntilClosed();
 
 ////        client.SetAutoRespawn(true);
 //
